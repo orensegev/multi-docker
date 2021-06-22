@@ -18,5 +18,5 @@ after_success:
   #Take thosde images and push them to docker hub
   - docker push orensegev/multi-client
   - docker push orensegev/multi-server
-  - docker push orensegev/multi-nginx
   - docker push orensegev/multi-worker
+  - docker push orensegev/multi-nginx
