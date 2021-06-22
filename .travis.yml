@@ -16,7 +16,7 @@ after_success:
   # Log in to the docekr CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Take thosde images and push them to docker hub
-  - docekr push orensegev/multi-client
-  - docekr push orensegev/multi-server
-  - docekr push orensegev/multi-nginx
-  - docekr push orensegev/multi-worker
+  - docker push orensegev/multi-client
+  - docker push orensegev/multi-server
+  - docker push orensegev/multi-nginx
+  - docker push orensegev/multi-worker
